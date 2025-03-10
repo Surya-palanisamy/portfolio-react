@@ -52,7 +52,7 @@ export default function Resume() {
         <div className="row justify-content-center mt-5">
           <div className="col-lg-4 col-md-6 text-center">
             <p>
-              <a href="#" className="btn btn-primary py-3 px-4">
+             <a href="/resume.pdf" download="SURYA-Resume.pdf" className="btn btn-primary py-3 px-4">
                 Download Resume
               </a>
             </p>
