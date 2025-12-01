@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import ClickSpark from './ClickSpark';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -14,7 +15,6 @@ import "./css/ajax-loader.gif";
 import "./css/animate.css";
 import "./css/icomoon.css";
 import "./css/style.css";
-
 function App() {
   useEffect(() => {
     const handleParallax = () => {
@@ -51,24 +51,32 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
-        <Mobinav />
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
 
-        <Footer />
-      </div>
+
+    <ClickSpark
+  sparkColor='#ff0000ff'
+  sparkSize={40}
+  sparkRadius={15}
+  sparkCount={11}
+  duration={400}
+>
+  <Mobinav />
+  <Header />
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/resume" element={<Resume />} />
+    <Route path="/services" element={<Services />} />
+    <Route path="/skills" element={<Skills />} />
+    <Route path="/projects" element={<Projects />} />
+    <Route path="/contact" element={<Contact />} />
+  </Routes>
+  <Footer />
+  </ClickSpark>
+
     </Router>
   );
 }
 
 export default App;
+

@@ -17,7 +17,7 @@ export default function About() {
             <div className="heading-section">
               <h2 className="mb-4">About Me</h2>
               <p>
-                Web developer | B.Tech IT Student (2nd year) at Sai Ram
+                Web developer | B.Tech IT Student (3rd year) at Sai Ram
                 Institute of Technology. Passionate about building dynamic and
                 scalable web applications using the MERN stack.
               </p>

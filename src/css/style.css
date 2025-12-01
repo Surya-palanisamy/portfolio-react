@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #121212;
 }
 .profile-section {
   max-width: 1200px;
@@ -3747,7 +3748,7 @@ h5 {
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light {
-    background: #000 !important;
+    background: #000 ;
     position: relative;
     top: 0;
     padding-top: 0;
