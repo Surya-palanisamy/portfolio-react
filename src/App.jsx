@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import ClickSpark from './ClickSpark';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -15,15 +14,16 @@ import "./css/ajax-loader.gif";
 import "./css/animate.css";
 import "./css/icomoon.css";
 import "./css/style.css";
+import ClickSpark from "./ClickSpark";
 function App() {
   useEffect(() => {
     const handleParallax = () => {
       const parallaxElements = document.querySelectorAll(
-        "[data-stellar-background-ratio]",
+        "[data-stellar-background-ratio]"
       );
       parallaxElements.forEach((element) => {
         const ratio = parseFloat(
-          element.getAttribute("data-stellar-background-ratio"),
+          element.getAttribute("data-stellar-background-ratio")
         );
         const offset = window.scrollY * ratio;
         element.style.backgroundPosition = `center ${offset}px`;
@@ -51,32 +51,29 @@ function App() {
 
   return (
     <Router>
+      <ClickSpark
+        sparkColor="#fff"
+        sparkSize={10}
+        sparkRadius={15}
+        sparkCount={8}
+        duration={400}
+      >
+        <Mobinav />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-
-    <ClickSpark
-  sparkColor='#ff0000ff'
-  sparkSize={40}
-  sparkRadius={15}
-  sparkCount={11}
-  duration={400}
->
-  <Mobinav />
-  <Header />
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/about" element={<About />} />
-    <Route path="/resume" element={<Resume />} />
-    <Route path="/services" element={<Services />} />
-    <Route path="/skills" element={<Skills />} />
-    <Route path="/projects" element={<Projects />} />
-    <Route path="/contact" element={<Contact />} />
-  </Routes>
-  <Footer />
-  </ClickSpark>
-
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </ClickSpark>
     </Router>
   );
 }
 
 export default App;
-
