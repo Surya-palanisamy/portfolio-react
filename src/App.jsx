@@ -52,10 +52,10 @@ function App() {
   return (
     <Router>
       <ClickSpark
-        sparkColor="#fff"
-        sparkSize={10}
-        sparkRadius={15}
-        sparkCount={8}
+        sparkColor="#f80000ff"
+        sparkSize={20}
+        sparkRadius={28}
+        sparkCount={13}
         duration={400}
       >
         <Mobinav />
