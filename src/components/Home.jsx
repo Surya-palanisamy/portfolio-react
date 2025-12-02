@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { initCarousel, initSmoothScrolling } from "../utils/customScripts";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
   useEffect(() => {
     initCarousel();
     initSmoothScrolling();
@@ -41,7 +43,7 @@ export default function Home() {
                       Hire me
                     </a>
                     <a
-                      href="#projects-section"
+                      onClick={() => navigate("/projects")}
                       className="btn btn-white btn-outline-white py-3 px-4 mx-2"
                     >
                       My works

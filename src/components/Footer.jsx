@@ -1,5 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 export default function Footer() {
+  const navigate = useNavigate();
   return (
     <footer className="ftco-footer ftco">
       <div className="container">
@@ -38,27 +41,33 @@ export default function Footer() {
               <h2 className="ftco-heading-2">Links</h2>
               <ul className="list-unstyled">
                 <li>
-                  <a href="home">
+                  <a onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
                     <span className="icon-long-arrow-right mr-2"></span>Home
                   </a>
                 </li>
                 <li>
-                  <a href="about">
+                  <a onClick={() => navigate("/about")} style={{ cursor: "pointer" }}>
                     <span className="icon-long-arrow-right mr-2"></span>About
                   </a>
                 </li>
                 <li>
-                  <a href="services">
+                  <a onClick={() => navigate("/works")} style={{ cursor: "pointer" }}>
                     <span className="icon-long-arrow-right mr-2"></span>Works
                   </a>
                 </li>
                 <li>
-                  <a href="projects">
+                  <a
+                    onClick={() => navigate("/projects")}
+                    style={{ cursor: "pointer" }}
+                  >
                     <span className="icon-long-arrow-right mr-2"></span>Projects
                   </a>
                 </li>
                 <li>
-                  <a href="contact">
+                  <a
+                    onClick={() => navigate("/contact")}
+                    style={{ cursor: "pointer" }}
+                  >
                     <span className="icon-long-arrow-right mr-2"></span>Contact
                   </a>
                 </li>
