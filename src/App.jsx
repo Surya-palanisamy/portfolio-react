@@ -12,7 +12,7 @@ import Services from "./components/Services";
 import Skills from "./components/Skills";
 import "./css/ajax-loader.gif";
 import "./css/animate.css";
-import "./css/icomoon.css";
+
 import "./css/style.css";
 import ClickSpark from "./ClickSpark";
 function App() {

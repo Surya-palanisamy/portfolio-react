@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
@@ -11,28 +11,11 @@ export default function Footer() {
             <div className="ftco-footer-widget mb-4">
               <h2 className="ftco-heading-2">About</h2>
               <p>
-                Web developer | B.Tech IT Student (2nd year) at Sai Ram
+                Web developer | B.Tech IT Student (3rd year) at Sai Ram
                 Institute of Technology | As a technology enthusiast, I am
                 always eager to expand my skill set and stay updated with the
                 latest advancements in web development.
               </p>
-              <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li className="ftco-animate">
-                  <a href="#">
-                    <span className="icon-twitter"></span>
-                  </a>
-                </li>
-                <li className="ftco-animate">
-                  <a href="#">
-                    <span className="icon-facebook"></span>
-                  </a>
-                </li>
-                <li className="ftco-animate">
-                  <a href="https://www.instagram.com/surya_palanisamy28">
-                    <span className="icon-instagram"></span>
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
 
@@ -41,17 +24,26 @@ export default function Footer() {
               <h2 className="ftco-heading-2">Links</h2>
               <ul className="list-unstyled">
                 <li>
-                  <a onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
+                  <a
+                    onClick={() => navigate("/")}
+                    style={{ cursor: "pointer" }}
+                  >
                     <span className="icon-long-arrow-right mr-2"></span>Home
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => navigate("/about")} style={{ cursor: "pointer" }}>
+                  <a
+                    onClick={() => navigate("/about")}
+                    style={{ cursor: "pointer" }}
+                  >
                     <span className="icon-long-arrow-right mr-2"></span>About
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => navigate("/works")} style={{ cursor: "pointer" }}>
+                  <a
+                    onClick={() => navigate("/works")}
+                    style={{ cursor: "pointer" }}
+                  >
                     <span className="icon-long-arrow-right mr-2"></span>Works
                   </a>
                 </li>

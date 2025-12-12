@@ -5,6 +5,9 @@ import netflix from "../assets/Netflix clone.jpg";
 import forms from "../assets/forms.jpg";
 import wings from "../assets/Wings.jpg";
 import messenger from "../assets/messenger.jpg";
+import DSync from "../assets/DSync.png";
+import certifeyeVerify from "../assets/certifeye-verify.png";
+
 import { initContentWayPoint, initMagnificPopup } from "../utils/customScripts";
 
 const ProjectCard = ({ title, description, imgUrl, liveLink, codeLink }) => {
@@ -47,6 +50,13 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "DSync messanger",
+      description: "Fullstack Project",
+      imgUrl: DSync,
+      liveLink: "https://dsync-chat.vercel.app/",
+      codeLink: "https://github.com/Surya-palanisamy/DSync",
+    },
+    {
       title: "codexcollab",
       description: "MERN Fullstack",
       imgUrl: codexcollab,
@@ -87,6 +97,13 @@ export default function Projects() {
       imgUrl: messenger,
       liveLink: "https://chat.suryapalanisamy.live/",
       codeLink: "https://github.com/Surya-palanisamy/Chat-App-Socket.io",
+    },
+    {
+      title: "certifeye-verify",
+      description: "Frontend Project",
+      imgUrl: certifeyeVerify,
+      liveLink: "https://certifeye-verify.vercel.app",
+      codeLink: "https://github.com/Surya-palanisamy/certifeye-verify",
     },
   ];
 
