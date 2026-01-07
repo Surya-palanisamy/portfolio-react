@@ -16,7 +16,7 @@ export default function Skills() {
             <div className="profile-section">
               <h2 className="profile-heading">Hi there 👋 It's me Surya</h2>
               <p className="profile-description">
-                🌱 I'm currently learning Web development
+                🌱 I'm currently learning Web development and Devops
               </p>
               <p className="profile-description">
                 👯 I'm looking to collaborate on Web development
@@ -26,7 +26,7 @@ export default function Skills() {
                 <a
                   href="https://www.linkedin.com/in/surya-palanisamy-/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  
                 >
                   <img
                     src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
@@ -35,9 +35,9 @@ export default function Skills() {
                   />
                 </a>
                 <a
-                  href="https://www.instagram.com/surya_palanisamy28?igsh=eG1nbTN6eHAwazR2"
+                  href="https://www.instagram.com/s.u.r.y.a_pa"
                   target="_blank"
-                  rel="noopener noreferrer"
+                 
                 >
                   <img
                     src="https://img.shields.io/badge/Instagram-0077B5?style=for-the-badge&logo=instagram&logoColor=pink"
@@ -100,32 +100,15 @@ export default function Skills() {
                     className="tech-icon"
                   />
                   <img
-                    src="https://img.icons8.com/nolan/50/express-js.png"
-                    alt="Express.js"
-                    className="tech-icon"
-                  />
-                  <img
-                    src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/32/000000/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png"
-                    alt="Postman"
-                    className="tech-icon"
-                    width="46"
-                    height="46"
+                    src="https://img.icons8.com/color//48/nextjs.png"
+                    alt="Nextjs"
                   />
                   <img
                     src="https://img.icons8.com/color/50/mongo-db.png"
                     alt="MongoDB"
                     className="tech-icon"
                   />
-                  <img
-                    src="https://img.icons8.com/color/48/000000/google-firebase-console.png"
-                    alt="Firebase"
-                    className="tech-icon"
-                  />
-                  <img
-                    src="https://img.icons8.com/nolan/50/markdown.png"
-                    alt="Markdown"
-                    className="tech-icon"
-                  />
+
                   <img
                     src="https://img.icons8.com/color/96/docker.png"
                     alt="Docker"
@@ -155,6 +138,11 @@ export default function Skills() {
                     src="https://img.icons8.com/fluency/48/canva.png"
                     alt="Canva"
                     className="tools-icon"
+                  />
+                  <img
+                    src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/100/000000/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png"
+                    alt="Postman"
+                    className="tech-icon"
                   />
                 </div>
               </div>
